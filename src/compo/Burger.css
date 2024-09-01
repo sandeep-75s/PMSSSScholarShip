@@ -1,0 +1,19 @@
+.burger1{
+    width: 200px;
+    height: 400px;
+    /* border:10px solid aqua; */
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    background-color: rgba(21,12,12,1);
+    color: white;
+}
+.burger1-child{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.item{
+    color : white;
+    text-decoration: none;
+}

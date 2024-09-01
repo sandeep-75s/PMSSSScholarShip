@@ -1,0 +1,85 @@
+.stepper-wrapper {
+    text-align: center;
+  }
+  
+  .register-heading {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+  }
+.stepper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    width: 40%;
+    text-align: center;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .step.active .circle {
+    background-color: #6d4c41; 
+  }
+  
+  .step p {
+    margin: 0;
+  }
+  
+  .step::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -50%;
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    z-index: -1;
+  }
+  .step2::before,.step3::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    z-index: -1;
+  }
+  
+  .step:last-child::after {
+    content: none;
+  }
+  
+  .step.active ~ .step::after {
+    background-color: gray; 
+  }
+  
+
+   @media(max-width:1285px){
+      
+      .step p{
+        font-size: 80%;
+      }
+   }

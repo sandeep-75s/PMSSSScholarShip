@@ -1,0 +1,15 @@
+.Sliding-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    width: auto;
+    height: 100%;
+}
+.user-para{
+    text-align: center;
+    color: white;
+}

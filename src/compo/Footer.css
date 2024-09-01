@@ -1,0 +1,150 @@
+:root{
+    /* --ba: 2px solid red; */
+}
+.footer-main-div{
+    width: 100%;
+    height: 99%;
+    border :var(--ba);
+    background-image: url("./image/Vector\ 1\ \(1\).png");
+    /* background-position: center; */
+    background-size: cover;
+}
+.footer-div-child{
+    width: 100%;
+    height: 400px;
+    border: var(--ba);
+}
+.footer-text{
+    width: 100%;
+    margin-left: 50px;
+    height: 50px;
+    border: var(--ba);
+    font-size: 200%;
+    font-weight: bold;
+    color: #EE351C;
+}
+.footer-card{
+    width: 100%;
+    height: 342px;
+    border: var(--ba);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-1{
+    width: 350px;
+    height: 250px;
+    border: var(--ba);
+    border-radius: 20px;
+    background-color: rgba(217,217,217,0.94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.other-govt-web{
+    width: 100%;
+    height: 150px;
+    border: var(--ba);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+.web-card-1{
+    width: 130px;
+    height: 80px;
+    border: var(--ba);
+    background-color: rgba(217,217,217,0.94) ;
+    border-radius: 20px;
+    /* background-image: url("./image/indiagov\ 1.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+    border: var(--ba);
+}
+.web-card-2{
+    width: 130px;
+    height: 80px;
+    border: var(--ba);
+    background-color:#150C0C;
+    border-radius: 20px;
+    /* background-image: url("./image/indiagov\ 1.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-list-div{
+    width: 100%;
+    height: 50px;
+    border: var(--ba);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.list-div-ul{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: var(--ba);
+    color: white;
+    font-size: 130%;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+
+
+}
+.update-date{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    color: black;
+    background-color:rgba(217,217,217,0.62) ;
+}
+@media(max-width:1215px){
+    .footer-card{
+        height: 100%;
+        gap: 10px;
+    }
+    .footer-main-div{
+        height: 100%;
+    }
+    .footer-div-child{
+        height: 100%;
+
+    }
+}
+@media(max-width:920px){
+    .other-govt-web{
+        height: 100%;
+        
+    }
+}
+@media(max-width:975px){
+    .list-div-ul{
+        height: 100%;
+    }
+    .footer-list-div{
+
+        height: 100%;
+    }
+}

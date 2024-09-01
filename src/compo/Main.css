@@ -1,0 +1,224 @@
+.Main-header{
+    width: 100vw;
+    height: 550px;
+    border: var(--ba);
+    background-image: linear-gradient( to bottom ,rgb(21, 12, 12) 50%,  rgb(255, 255, 255)50%);
+    position: relative;
+    overflow: hidden;
+    
+}
+.vector-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.vector1{
+    width: 100vw;
+    height: 99.0%;
+    top: -90px;
+}
+.Main{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "ml mr";
+    z-index: 1;
+    border: var(--ba);
+    overflow: hidden;
+
+}
+.main-left{
+    grid-area: ml;
+    width: 100%;
+    height: 100%;
+    border: var(--ba);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main-left-child{
+    width: 70%;
+    height: 300px;
+    border: var(--ba);
+    background-image: url("./image/Rectangle\ 4.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main-right{
+    grid-area: mr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.main-right-child{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+.modi{
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    z-index: 12;
+    position: relative;
+    overflow: hidden;
+}
+
+.box{
+    position: absolute;
+    overflow: hidden;
+}
+
+.blue-ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(124, 124, 207);
+    right: 100px;
+    top: 10px;
+    animation: move1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.green-ball{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(89, 165, 89);
+    border-radius: 50%;
+    animation: move2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.yellow-ball{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 40px;
+    animation: move3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes move2 {
+    0%{
+        top:0px;
+        left:0px;
+    }
+    50%{
+        top: 20px;
+        left: 15px;
+    }
+    100%{
+        top:0px;
+        left:0px;;
+    }
+}
+@keyframes move3 {
+    0%{
+        right:40px;
+        bottom: 20px;
+    }
+    50%{
+        right: 20px;
+        bottom: 5px;
+    }
+    100%{
+        right:40px;
+        bottom: 20px;
+    }
+}
+@keyframes move1 {
+    0%{
+        right:40px;
+        bottom: 20px;
+    }
+    50%{
+        right: 20px;
+        bottom: 5px;
+    }
+    100%{
+        right:40px;
+        bottom: 20px;
+    }
+}
+
+.notice-div{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    /* height: 30px; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.notice{
+    color: red;
+    font-weight: bold;
+}
+.slide{
+    display: flex;
+}
+.list-ul{
+    display: flex;
+    gap: 400px;
+    font-weight: bold;
+}
+.footer{
+    width: 100%;
+    height: 720px;
+}
+@media(max-width:1215px){
+    .footer{
+        height: 100%;
+    }
+}
+@media(max-width:1000px){
+    .main-left-child{
+        width: 85%;
+    }
+    .main-right-child{
+        width: 60%;
+    }
+}
+@media(max-width:800px){
+    .Main{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "mr"
+        "ml";
+        height: 100%;
+    }
+    .main-right{
+        height: 300px;
+    }
+    .main-right-child{
+        height: 100%;
+        width: 40%;
+    }
+}
+@media(max-width:500px){
+    .main-right-child{
+        width: 50%;
+    }
+    .main-left-child{
+        width: 90%;
+    }
+}
+@media(max-width:400px){
+    .main-right-child{
+        width: 60%;
+    }
+}
