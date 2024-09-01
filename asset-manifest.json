@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/PMSSSScholarShip/static/css/main.c6e3f99f.css",
+    "main.js": "/PMSSSScholarShip/static/js/main.5f16cb73.js",
+    "static/js/453.c78ae5ac.chunk.js": "/PMSSSScholarShip/static/js/453.c78ae5ac.chunk.js",
+    "static/media/Footer Page.png": "/PMSSSScholarShip/static/media/Footer Page.ffd198d09ed2816ccf6d.png",
+    "static/media/Vector 1 (1).png": "/PMSSSScholarShip/static/media/Vector 1 (1).0f75d9fd8a499d5acf29.png",
+    "static/media/gandhi.png": "/PMSSSScholarShip/static/media/gandhi.1c8570f00b63079cea55.png",
+    "static/media/modi1.png": "/PMSSSScholarShip/static/media/modi1.36107e7ba5bc783f4baf.png",
+    "static/media/user.png": "/PMSSSScholarShip/static/media/user.0cda7981feb0053b1a91.png",
+    "static/media/Rectangle 4.png": "/PMSSSScholarShip/static/media/Rectangle 4.c1ac4e6490dbf48371a4.png",
+    "static/media/AICTE Logo 1.png": "/PMSSSScholarShip/static/media/AICTE Logo 1.063cd32bf84ba26e590b.png",
+    "static/media/govt.png": "/PMSSSScholarShip/static/media/govt.3e67d5a4aeaa5dcb2043.png",
+    "static/media/AICTE Logo3 1.png": "/PMSSSScholarShip/static/media/AICTE Logo3 1.9af26e70d874574ceab2.png",
+    "static/media/logo_nic 1.png": "/PMSSSScholarShip/static/media/logo_nic 1.ca5ebee41f1a5e561a3e.png",
+    "static/media/di 1.png": "/PMSSSScholarShip/static/media/di 1.29e14b3faee409f37a2d.png",
+    "static/media/indiagov 1.png": "/PMSSSScholarShip/static/media/indiagov 1.570d4e5b36d67c7830d5.png",
+    "static/media/Vector 1.png": "/PMSSSScholarShip/static/media/Vector 1.2fe179f6c86575c03011.png",
+    "static/media/DBT 1.png": "/PMSSSScholarShip/static/media/DBT 1.ead8c769b3050219f860.png",
+    "index.html": "/PMSSSScholarShip/index.html",
+    "main.c6e3f99f.css.map": "/PMSSSScholarShip/static/css/main.c6e3f99f.css.map",
+    "main.5f16cb73.js.map": "/PMSSSScholarShip/static/js/main.5f16cb73.js.map",
+    "453.c78ae5ac.chunk.js.map": "/PMSSSScholarShip/static/js/453.c78ae5ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6e3f99f.css",
+    "static/js/main.5f16cb73.js"
+  ]
+}
