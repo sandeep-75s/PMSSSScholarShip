@@ -6,7 +6,7 @@ const PrivateRoute = ({islogin, children }) => {
         return children;
     }
     else{
-        return <Navigate to='/login'/>
+        return <Navigate to='/PMSSSScholarShip/login'/>
     }
     
 };

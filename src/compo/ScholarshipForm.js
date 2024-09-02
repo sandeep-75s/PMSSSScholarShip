@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ScholarshipForm.css"; 
 
-const ScholarshipForm = () => {
+const ScholarshipForm = ({userData}) => {
   const [formData, setFormData] = useState({
     firstName: "",
     middleName: "",
@@ -45,7 +45,8 @@ const ScholarshipForm = () => {
 
     const handleSubmit = (e) => {
     e.preventDefault();
-  
+    
+    console.log("User Data:", userData);
     console.log("Form Data:", formData);
   
     if (filePreviews.tenthMarksheet) {

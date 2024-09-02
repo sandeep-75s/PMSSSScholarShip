@@ -2,9 +2,9 @@ import logo from './image/AICTE Logo 1.png'
 import vector from './image/Vector 4.png'
 import logotext from './image/AICTE Logo3 1.png'
 import vector3 from './image/Vector 3.png'
+import { toast } from 'react-toastify'
 import './Navbar.css'
-import { Navigate, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Navbar({clickBurger,islogin,setislogin}){
     
@@ -14,16 +14,17 @@ function Navbar({clickBurger,islogin,setislogin}){
         clickBurger()
     }
     function RegisterHandler(){
-        navigate('./Register');
+        navigate('PMSSSScholarShip/Register');
     }
     function LoginHandler(){
-        navigate('./login');
+        navigate('PMSSSScholarShip/login');
     }
     function logoHandler(){
-        navigate('/')
+        navigate('PMSSSScholarShip/')
     }
     function LogoutHandler(){
-        navigate('/');
+        navigate('PMSSSScholarShip/');
+        toast.success("Logout Successfully");
         setislogin(false);
     }
     return(

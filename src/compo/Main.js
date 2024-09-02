@@ -3,14 +3,12 @@ import './Main.css'
 import Sliding from './Sliding';
 import modi from './image/modi1.png'
 import Burger from './Burger';
-import Navbar from './Navbar';
-import { useState } from 'react';
 import Footer from './Footer';
 import { useNavigate   } from 'react-router-dom';
 function Main({burger,clickBurger}){
     const navigate = useNavigate();
     function formHandler(){
-        navigate('./ScholarshipForm');;
+        navigate('./ScholarshipForm');
     }
     return (
         <div>
@@ -19,7 +17,7 @@ function Main({burger,clickBurger}){
                 <Burger clickBurger={clickBurger}/>
             }
             <div className='vector-div'>
-                <img className='vector1' src={vector1}></img>
+                <img className='vector1' src={vector1} alt='vector1'></img>
             </div>
             <div className='Main'>
                 <div className='main-left'>
@@ -32,7 +30,7 @@ function Main({burger,clickBurger}){
                         <div className='blue-ball box'></div>
                         <div className='green-ball box'></div>
                         <div className='yellow-ball box'></div>
-                        <img className='modi' src={modi}></img>
+                        <img className='modi' src={modi} alt='modi'></img>
                     </div>
                 </div>
             </div>

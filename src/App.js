@@ -3,8 +3,8 @@ import './App.css';
 import Navbar from './compo/Navbar';
 import Main from './compo/Main';
 // import Burger from './compo/Burger';
-import { useState } from 'react';
-import { Route, Routes,Navigate } from 'react-router-dom';
+import {useState } from 'react';
+import { Route, Routes} from 'react-router-dom';
 import Register from './compo/Register';
 import { useLocation } from 'react-router-dom';
 import Login from './compo/Login';
@@ -18,20 +18,33 @@ function App() {
   function clickBurger(){
       setBurger((pre)=>!pre);
   }
+  // var userData;
+  const [userData,setUserData] = useState();
+  function allData(object){
+    setUserData(object);
+    // userData = object;
+    // console.log("im App");
+    // console.log(userData);
+  }
+  // useEffect(()=>{
+  //   allData();
+  // },userData);
+
+
   return (
     <div>
       <div>
-        {location.pathname !== '/Register'  && location.pathname !== '/ScholarshipForm'  && location.pathname !== '/login' && <Navbar clickBurger={clickBurger} islogin={islogin} setislogin={setlogin} />}
+        {location.pathname !== '/PMSSSScholarShip/Register'  && location.pathname !== '/PMSSSScholarShip/ScholarshipForm'  && location.pathname !== '/PMSSSScholarShip/login' && <Navbar clickBurger={clickBurger} islogin={islogin} setislogin={setlogin} />}
       </div>
       <div>
         <Routes>
-          <Route path='/' element={<Main burger={burger} clickBurger={clickBurger}/>} />
-          <Route path='/Register' element={<Register burger={burger} setlogin={setlogin}/> }></Route>
-          <Route path='/login' element={<Login burger={burger} setlogin={setlogin}/> }></Route>
+          <Route path='/PMSSSScholarShip/' element={<Main burger={burger} clickBurger={clickBurger}/>} />
+          <Route path='/PMSSSScholarShip/Register' element={<Register burger={burger} setlogin={setlogin} allData={allData}/> }></Route>
+          <Route path='/PMSSSScholarShip/login' element={<Login burger={burger} setlogin={setlogin} allData={allData}/> }></Route>
           {/* <Route path='/Scholarshipform' element={<ScholarshipForm/>}></Route> */}
-          <Route path='/ScholarshipForm' element={
+          <Route path='PMSSSScholarShip/ScholarshipForm' element={
                 <PrivateRoute islogin={islogin}>
-                    <ScholarshipForm />
+                    <ScholarshipForm userData={userData} />
                 </PrivateRoute>
             } />
         </Routes>

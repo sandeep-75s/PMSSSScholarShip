@@ -195,6 +195,7 @@
     width: 40px;
     height: 40px;
     border: var(--ba);
+    cursor: pointer;
 }
 .captcha-nub{
     width: 90px;
